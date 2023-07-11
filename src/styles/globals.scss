@@ -1,0 +1,46 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+@import "./layout.scss";
+
+a {
+  color: #0063ff;
+
+  &:visited {
+    color: #333399;
+  }
+
+  &:hover {
+    color: #ff0000;
+  }
+
+  text-decoration: none;
+}
+
+main {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+table.md-table {
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+
+  thead tr,
+  tbody tr:not(:last-child) {
+    border-bottom: 1px solid rgba(50, 50, 50, 0.3);
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: rgba(200, 200, 200, 0.2);
+  }
+}
