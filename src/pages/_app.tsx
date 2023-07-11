@@ -12,9 +12,9 @@ export default function App({ Component, pageProps }: AppProps) {
           <meta name="viewport" content="width=device-width,initial-scale=1" />
         </Head>
         <header>
-          <a href="/" className="navbar-brand">
+          <Link href="/" className="navbar-brand">
             Graphiumのブログ
-          </a>
+          </Link>
         </header>
         <main>
           <Component {...pageProps} />
