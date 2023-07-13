@@ -24,27 +24,43 @@ body {
 }
 
 header {
-  display: flex;
+  // display: flex;
   width: 100%;
-  background-color: #fff;
-
-  position: sticky;
-
+  background-color: #ddfdf8;
+  // height: 5rem;
+  // position: sticky;
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  color: #fff;
+  vertical-align: middle;
   // @media (max-width: 1000px) {
   //   position: static;
   // }
-
   top: 0;
+  a {
+    vertical-align: middle;
+    color: #050505 !important;
+  }
+  #HeaderIcon{
+    vertical-align: top;
+    // padding-top: 0.5rem;
+    // padding-bottom: 0.5rem;
+    height: 3rem;
+    // color: #050505 !important;
+    // margin-right: 0.5rem;
+  }
 }
 
 main {
-  padding: 20px 0;
+  padding: 2rem 2rem 5rem 2rem;
 }
 
-// #layout_wrapper {
-//   background-color: #fff;
-//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-// }
+#layout_wrapper {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
 main>article {
   margin: 20px;

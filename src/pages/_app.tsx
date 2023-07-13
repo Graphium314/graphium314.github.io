@@ -13,7 +13,8 @@ export default function App({ Component, pageProps }: AppProps) {
         </Head>
         <header>
           <Link href="/" className="navbar-brand">
-            Graphiumのブログ
+            <img src="/GraphiumIcon.png" alt="" id="HeaderIcon" />
+            Graphiumのぶろぐ
           </Link>
         </header>
         <main>

@@ -17,6 +17,21 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  background: #f5fffd;
+  padding: 0.5rem;
+  // font-size: 2rem;
+  // border-bottom: 1px solid #98f9ea;
+  border-left: 2px solid #98f9ea;
+}
+
+h2 {
+  // background: #f5fffd;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #98f9ea;
+}
+
 main {
   img {
     max-width: 100%;
