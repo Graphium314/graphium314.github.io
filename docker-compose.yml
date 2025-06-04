@@ -6,7 +6,9 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.blog.rule=Host(`pisnp.net`)"
-      - "traefik.http.routers.blog.entrypoints=web"
+      - "traefik.http.routers.blog.entrypoints=websecure"
+      - "traefik.http.routers.blog.tls=true"
+      - "traefik.http.routers.blog.tls.certresolver=myresolver"
       - "traefik.http.services.blog.loadbalancer.server.port=3000"
     networks:
       - traefik-public
