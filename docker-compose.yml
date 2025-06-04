@@ -5,7 +5,7 @@ services:
     build: .
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.blog.rule=Host(`blog.pisnp.net`)"
+      - "traefik.http.routers.blog.rule=Host(`pisnp.net`)"
       - "traefik.http.routers.blog.entrypoints=web"
       - "traefik.http.services.blog.loadbalancer.server.port=3000"
     networks:
