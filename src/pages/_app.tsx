@@ -23,8 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
         </main>
       </div>
-      {/* ここにアクセスカウンターのHTMLタグを埋め込みます */}
-      <div className="access-counter-wrapper"> {/* 新しく追加したラッパー */}
+      <div className="access-counter-wrapper">
         <table border={0} cellSpacing={0} cellPadding={0} className="access-counter">
           <tbody>
             <tr>
@@ -45,7 +44,7 @@ export default function App({ Component, pageProps }: AppProps) {
             </tr>
           </tbody>
         </table>
-      </div> {/* ラッパーの閉じタグ */}
+      </div>
       <footer>
         <div>
           <p>
