@@ -60,8 +60,8 @@ table.md-table {
   }
 }
 
-// アクセスカウンターのスタイル
-.access-counter {
-  display: block; // table要素をブロック要素として扱い、margin: auto; を有効にする
-  margin: 20px auto; // 上下に20pxのマージン、左右は自動で中央寄せ
+// アクセスカウンターのラッパーのスタイル
+.access-counter-wrapper {
+  text-align: center; // 子要素（アクセスカウンターのtable）を中央寄せ
+  margin: 20px 0; // 上下に20pxのマージン
 }
