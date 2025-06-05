@@ -21,18 +21,14 @@ export default function App({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
         </main>
       </div>
-      {/* ここに新しいHTMLタグを埋め込みます */}
-      <div style={{ textAlign: 'center', marginTop: '20px', padding: '10px', backgroundColor: '#e0ffe0' }}>
-        <p>これはフッターの上に埋め込まれた新しいコンテンツです。</p>
-        <p>ここに任意のHTMLを追加できます。</p>
-      </div>
-      <footer>
-        <div>
-          <p>
-            Graphium314
-          </p>
-        </div>
-      </footer>
-    </>
-  );
+      <!--タグはここから--><table border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><a href="http://www.rays-counter.com/"><img src="http://www.rays-counter.com/d1298_f6_017/6841afa46c7e5/" alt="アクセスカウンター" border="0"></a></td></tr><tr><td align="center" style="font-size:xx-small"><img src="http://www.rays-counter.com/images/counter_01.gif" border="0"><img src="http://www.rays-counter.com/images/counter_02.gif" border="0"><img src="http://www.rays-counter.com/images/counter_03.gif" border="0"><img src="http://www.rays-counter.com/images/counter_04.gif" border="0"><img src="http://www.rays-counter.com/images/counter_05.gif" border="0"></td></tr></table><!--ここまで-->
+        <footer>
+          <div>
+            <p>
+              Graphium314
+            </p>
+          </div>
+        </footer>
+      </>
+        );
 }
