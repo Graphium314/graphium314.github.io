@@ -59,3 +59,9 @@ table.md-table {
     background-color: rgba(200, 200, 200, 0.2);
   }
 }
+
+// アクセスカウンターのスタイル
+.access-counter {
+  display: block; // table要素をブロック要素として扱い、margin: auto; を有効にする
+  margin: 20px auto; // 上下に20pxのマージン、左右は自動で中央寄せ
+}
