@@ -29,10 +29,6 @@ export default function App({ Component, pageProps }: AppProps) {
           <tr>
             <td align="center">
               <a href="http://www.rays-counter.com/">
-                {/* アクセスカウンターの画像も<Image>コンポーネントに置き換え可能ですが、外部URLのためloader設定が必要になる場合があります。
-                    今回は警告の対象外なので、そのまま<img>タグを残します。
-                    もし最適化したい場合は、next.config.jsでdomains設定やcustom loaderの設定が必要です。
-                */}
                 <img src="http://www.rays-counter.com/d1298_f6_017/6841afa46c7e5/" alt="アクセスカウンター" />
               </a>
             </td>
