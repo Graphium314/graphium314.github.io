@@ -21,6 +21,11 @@ export default function App({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
         </main>
       </div>
+      {/* ここに新しいHTMLタグを埋め込みます */}
+      <div style={{ textAlign: 'center', marginTop: '20px', padding: '10px', backgroundColor: '#e0ffe0' }}>
+        <p>これはフッターの上に埋め込まれた新しいコンテンツです。</p>
+        <p>ここに任意のHTMLを追加できます。</p>
+      </div>
       <footer>
         <div>
           <p>
