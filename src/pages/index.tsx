@@ -10,7 +10,7 @@ export default function Page() {
             <tr>
               <td align="center">
                 <a href="http://www.rays-counter.com/">
-                  <img src="http://www.rays-counter.com/d1298_f6_017/6841afa46c7e5/" alt="アクセスカウンター" />
+                  <img src="http://www.rays-counter.com/d1298_f6_022/6841be1d78349/" alt="アクセスカウンター" />
                 </a>
               </td>
             </tr>
