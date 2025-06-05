@@ -62,6 +62,7 @@ table.md-table {
 
 // アクセスカウンターのラッパーのスタイル
 .access-counter-wrapper {
-  text-align: center; // 子要素（アクセスカウンターのtable）を中央寄せ
-  margin: 20px 0; // 上下に20pxのマージン
+  display: flex; /* Flexboxを有効にする */
+  justify-content: center; /* 子要素を水平方向の中央に配置 */
+  margin: 20px 0; /* 上下に20pxのマージン */
 }
