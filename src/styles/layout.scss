@@ -49,27 +49,45 @@ header {
   }
 
   .navbar-nav {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
   }
 
   .nav-link {
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    font-weight: 500;
-    color: #166534 !important;
-    transition: background-color 0.15s ease, color 0.15s ease;
+  position: relative;
+  padding: 0.75rem 0;
+  font-weight: 500;
+  color: #166534 !important;
+  text-decoration: none;
+  transition: color 0.15s ease;
 
-    &:hover {
-      background-color: #d1fae5;
-      color: #14532d !important;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0.3rem;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: width 0.18s ease;
+  }
 
-    &.active {
-      background-color: var(--accent);
-      color: #fff !important;
+  &:hover {
+    color: #14532d !important;
+
+    &::after {
+      width: 100%;
     }
+  }
+
+  &.active {
+    color: #022c22 !important;
+
+    &::after {
+      width: 100%;
+    }
+  }
   }
 }
 
