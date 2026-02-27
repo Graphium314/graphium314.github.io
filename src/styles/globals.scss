@@ -84,6 +84,24 @@ main {
   }
 }
 
+.atcoder-badge {
+  margin: 0.25rem 0 2rem;
+
+  a {
+    display: inline-block;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+
+    img {
+      display: block;
+    }
+
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+    }
+  }
+}
+
 table.md-table {
   border-collapse: collapse;
 
