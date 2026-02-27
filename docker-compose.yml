@@ -1,18 +1,27 @@
-version: '3'
+version: "3"
 
 services:
   blog:
     build: .
     labels:
       - "traefik.enable=true"
+      # メインドメイン用ルーター
       - "traefik.http.routers.blog.rule=Host(`pisnp.net`)"
       - "traefik.http.routers.blog.entrypoints=websecure"
       - "traefik.http.routers.blog.tls=true"
       - "traefik.http.routers.blog.tls.certresolver=myresolver"
       - "traefik.http.services.blog.loadbalancer.server.port=3000"
+      # www → メインドメインにリダイレクト
+      - "traefik.http.routers.blog-www.rule=Host(`www.pisnp.net`)"
+      - "traefik.http.routers.blog-www.entrypoints=websecure"
+      - "traefik.http.routers.blog-www.tls=true"
+      - "traefik.http.routers.blog-www.tls.certresolver=myresolver"
+      - "traefik.http.routers.blog-www.middlewares=redirect-www"
+      - "traefik.http.middlewares.redirect-www.redirectregex.regex=^https://www\\.(.+)"
+      - "traefik.http.middlewares.redirect-www.redirectregex.replacement=https://$${1}"
     networks:
       - traefik-public
 
 networks:
   traefik-public:
-    external: true 
+    external: true
