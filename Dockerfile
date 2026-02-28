@@ -1,13 +1,17 @@
 # Build stage
 FROM node:18-alpine
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
+
+# pnpm を有効化（package.json の packageManager を使用）
+RUN corepack enable
+
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
 COPY . .
 
 # ビルド
-RUN npm run build
+RUN pnpm run build
 
 # ポート3000で配信
 EXPOSE 3000
-CMD ["npm", "start"]
+CMD ["pnpm", "start"]
