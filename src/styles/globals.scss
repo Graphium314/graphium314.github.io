@@ -102,6 +102,162 @@ main {
   }
 }
 
+// --- About me ページ ---
+.about-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.75rem;
+  padding: 2.5rem 1.5rem 2rem 2.5rem;
+  margin: 0 -2rem 2.5rem;
+  background: linear-gradient(165deg, var(--accent-soft) 0%, rgba(34, 197, 94, 0.06) 50%, transparent 100%);
+  border-radius: 0 0 24px 24px;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem 1.75rem 1.5rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: 2rem;
+    gap: 1.25rem;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .about-avatar {
+    flex-shrink: 0;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(15, 23, 42, 0.12), 0 0 0 4px rgba(255, 255, 255, 0.9);
+
+    @media (max-width: 640px) {
+      width: 112px;
+      height: 112px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .about-hero-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    min-width: 0;
+
+    @media (max-width: 640px) {
+      align-items: center;
+    }
+  }
+
+  .about-name {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+    letter-spacing: -0.02em;
+
+    @media (max-width: 640px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  .about-tagline {
+    font-size: 0.95rem;
+    color: #475569;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .social-links {
+    margin: 0.25rem 0 0;
+
+    @media (max-width: 640px) {
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .social-links a {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+
+    &:hover {
+      background-color: #fff;
+      box-shadow: 0 6px 20px rgba(34, 197, 94, 0.25);
+    }
+  }
+
+  .atcoder-badge {
+    margin: 0.25rem 0 0;
+
+    @media (max-width: 640px) {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.about-cards {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.about-card {
+  background: linear-gradient(180deg, #fafafa 0%, #fff 100%);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 1.35rem 1.5rem;
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin: 0 0 0.9rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-soft);
+    display: inline-block;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #334155;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.7;
+    }
+  }
+}
+
 table.md-table {
   border-collapse: collapse;
 
