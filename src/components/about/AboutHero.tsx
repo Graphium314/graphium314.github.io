@@ -1,6 +1,7 @@
 import type { FC } from "react";
 import { aboutHero } from "@/data/about";
 import SocialLinks from "./SocialLinks";
+import AboutAffiliation from "./AboutAffiliation";
 
 const AboutHero: FC = () => (
   <div className="about-hero">
@@ -9,6 +10,7 @@ const AboutHero: FC = () => (
     </div>
     <div className="about-hero-body">
       <p className="about-name">{aboutHero.name}</p>
+      <AboutAffiliation />
       <SocialLinks />
       <div className="atcoder-badge">
         <a

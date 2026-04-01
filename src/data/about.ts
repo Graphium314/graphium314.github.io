@@ -14,14 +14,19 @@ export const aboutHero = {
   },
 } as const;
 
+export const aboutAffiliation = [
+  "東京大学大学院 情報理工学系研究科 数理情報学専攻 修士課程",
+  "東京大学アマチュア無線クラブ",
+] as const;
+
+export const aboutHistory = [
+  "2026年4月-現在 東京大学 情報理工学系研究科 数理情報学専攻",
+  "2024年4月-2026年3月 東京大学 工学部 計数工学科 数理情報工学コース",
+  "2022年4月-2024年3月 東京大学 理科一類",
+  "-2022年3月 長崎県立佐世保北高等学校",
+] as const;
+
 export const aboutCards = [
-  {
-    title: "所属",
-    items: [
-      "東京大学工学部計数工学科数理情報工学コース 工学部推薦7期",
-      "東京大学アマチュア無線クラブ",
-    ],
-  },
   {
     title: "コールサイン",
     items: ["JF6CDE", "AK6RG"],
