@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -21,7 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
         </Head>
         <header>
           <Link href="/" className="navbar-brand">
-            <img src="/GraphiumIcon.png" alt="" id="HeaderIcon" />
+            <Image src="/GraphiumIcon.png" alt="Graphiumのアイコン" width={40} height={40} id="HeaderIcon" priority />
             Graphiumのぶろぐ
           </Link>
           <nav className="navbar-nav">
